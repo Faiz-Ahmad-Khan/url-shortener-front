@@ -44,12 +44,12 @@ const Dashboard = () => {
         </label>
         <input
           required
-          placeholder="Url"
+          placeholder="Enter Url"
           type="url"
           value={fullUrl}
           onChange={(e) => setFullUrl(e.target.value)}
           id="fullUrl"
-          className="form-control col mr-2"
+          className="form-control"
         />
         <button className="btn btn-success" type="submit">
           Shrink
@@ -71,7 +71,7 @@ const Dashboard = () => {
                 <a href={shortUrl.full}>{shortUrl.full}</a>
               </td>
               <td>
-                <a href={shortUrl.short}>{shortUrl.short}</a>
+                <a href={shortUrl.full}>{shortUrl.short}</a>
               </td>
               <td>{shortUrl.clicks}</td>
             </tr>

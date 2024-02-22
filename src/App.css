@@ -109,8 +109,14 @@ h1 {
   align-items: center;
 }
 
-.form-inline .form-control {
+.form-inline, .form-control {
   flex: 1;
+}
+
+.form-control {
+  width: 100%;
+  padding: 4px;
+  margin: 10px;
 }
 
 .table {
